@@ -1,0 +1,16 @@
+BRousch's Kivy Installers
+
+Scripts to simplify the installation of Kivy.
+
+Ubuntu 12.04
+
+sysprep: Run this once to prepare your system for Kivy, or run it to bring 
+your dependencies up to date. It installs Kivy's and PyGame's system 
+dependencies, current Cython and NumPy via system-wide pip, and system-wide 
+PyGame from its Mercurial repository. It also installs OpenJDK 7 so you're 
+ready to create Kivy apps for Android.
+
+virtualenv: Run this script to create a Kivy virtualenv for your current 
+project. It creates a Python 2.7 virtualenv with --system-site-packages 
+enabled, and Kivy, Plyer, and Buildozer installed.
+
