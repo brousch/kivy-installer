@@ -5,15 +5,15 @@ sudo apt-get install -y build-essential mercurial git python2.7 python-setuptool
 # Bootstrap a current Python environment
 sudo apt-get remove --purge -y python-virtualenv python-pip
 sudo easy_install-2.7 -U pip
-sudo pip-2.7 install -U virtualenv
+sudo pip2.7 install -U virtualenv
 
 # Install current version of Cython
 sudo apt-get remove --purge -y cython
-sudo pip-2.7 install -U cython
+sudo pip2.7 install -U cython
 
 # Install other PyGame dependencies
 sudo apt-get remove --purge -y python-numpy
-sudo pip-2.7 install -U numpy
+sudo pip2.7 install -U numpy
 
 # Install PyGame
 hg clone https://bitbucket.org/pygame/pygame
