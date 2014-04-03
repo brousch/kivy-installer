@@ -1,34 +1,33 @@
 BRousch's Kivy Installers
 
-Scripts to simplify the installation of Kivy
+Scripts to simplify the installation of Kivy and Buildozer
 
 Currently Supports:
   * Ubuntu 12.04
 
-Usage:
+To Install Kivy:
 
   1. Find the right subfolder for your distro and Python version.
-  2. Run the sysprep.sh script time.
+  2. Run the kivy_sysprep.sh script time.
   3. Go to your project dir (or wherever you want the virtualenv).
-  4. Run the stable_venv.sh or dev_venv.sh script for your distro and Python using a relative or absolute path.
+  4. Run the kivy_venv_stable.sh or kivy_venv_dev.sh script for your distro and Python using a relative or absolute path.
 
-Example run for sysprep:
+Example run for kivy_sysprep:
   * I'm running Ubuntu 12.04
   * kivy-installer is located at ~/kivy-installer
   * I want to use Kivy Stable version
   * I want to use Python2.7
   * `cd ~`
-  * `~/kivy-installer/ubuntu/python27/sysprep.sh`
+  * `~/kivy-installer/ubuntu/1204/python27/kivy_sysprep.sh`
   * Now my system is ready to create virtualenvs for Kivy Stable on Python 2.7!
 
 Example run for venv:
   * My project is located at ~/myproj
   * `cd ~/myproj`
-  * `~/kivy-installer/ubuntu/python27/stable_venv.sh`
+  * `~/kivy-installer/ubuntu/1204/python27/kivy_venv_stable.sh`
   * Now I have a virtualenv at ~/myproj/venv which is ready to run Kivy!
 
-
-Notes on sysprep:
+Notes on kivy_sysprep:
   * Run this once to prepare your system for Kivy with specified Python version.
   * You can run it again later to bring your dependencies back up to date.
   * It installs:
@@ -37,7 +36,7 @@ Notes on sysprep:
     * System-wide PyGame from its Mercurial repository
     * On Python 2.7 it also installs OpenJDK 7 so you're ready to create Kivy apps for Android.
 
-Notes on stable_venv:
+Notes on kivy_venv_stable:
   * Run this script to create a Kivy virtualenv for each of your projects.
   * This script installs the current stable version of Kivy from PyPI.
   * For Python 2.7, it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, Docutils, 
@@ -45,11 +44,16 @@ Notes on stable_venv:
   * For Python 3.3 it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, and Docutils 
   installed.
 
-Notes on dev_venv:
+Notes on kivy_venv_dev:
   * Run this script to create a Kivy virtualenv for each of your projects.
   * This script installs the current development (master) version of Kivy from GitHub.
   * For Python 2.7, it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, Docutils, 
   and Buildozer installed.
   * For Python 3.3 it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, and Docutils 
   installed.
+
+To Install Buildozer Only:
+
+  1. Find the right subfolder for your distro and Python version.
+  2. Run the buildozer_only.sh script time.
 
