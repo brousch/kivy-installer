@@ -10,7 +10,6 @@ sudo apt-get install -y build-essential mercurial git python3.3 python3.3-dev ff
 # Bootstrap a current Python environment
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python3.3
 rm setuptools*.zip
-sudo apt-get remove --purge -y python-virtualenv python-pip
 sudo easy_install-3.3 -U pip
 sudo pip3.3 install -U virtualenv
 
