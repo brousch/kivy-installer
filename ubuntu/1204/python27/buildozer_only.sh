@@ -1,7 +1,7 @@
  #!/bin/sh
 
 # Install necessary system packages
-sudo apt-get install -y build-essential git zlib1g-dev python2.7 python2.7-dev
+sudo apt-get install -y build-essential git zlib1g-dev python2.7 python2.7-dev ia32-libs
 
 # Bootstrap a current Python environment
 sudo apt-get remove --purge -y python-virtualenv python-pip python-setuptools
