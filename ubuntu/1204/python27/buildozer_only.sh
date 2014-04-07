@@ -13,3 +13,6 @@ sudo pip2.7 install -U virtualenv
 # Install current version of Cython
 sudo apt-get remove --purge -y cython
 sudo pip2.7 install -U cython
+
+# Install Buildozer from master
+sudo pip2.7 install -U git+https://github.com/kivy/buildozer.git@master
