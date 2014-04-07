@@ -18,4 +18,5 @@ sudo pip3.3 install -U virtualenv
 sudo apt-get remove --purge -y cython
 sudo pip3.3 install -U cython
 
+# Install Buildozer from master (not yet available for > py2.7)
 #sudo pip3.3 install -U git+https://github.com/kivy/buildozer.git@master
