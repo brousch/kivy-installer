@@ -4,13 +4,14 @@ Scripts to simplify the installation of Kivy and Buildozer
 
 Currently Supports:
   * Ubuntu 12.04
+  * Ubuntu 14.04
 
 To Install Kivy:
 
   1. Find the right subfolder for your distro and Python version.
   2. Run the kivy_sysprep.sh script time.
   3. Go to your project dir (or wherever you want the virtualenv).
-  4. Run the kivy_venv_stable.sh or kivy_venv_dev.sh script for your distro and Python using a relative or absolute path.
+  4. Run the kivy_venv_stable.sh script for your distro and Python using a relative or absolute path.
 
 Example run for kivy_sysprep:
   * I'm running Ubuntu 12.04
@@ -39,21 +40,12 @@ Notes on kivy_sysprep:
 Notes on kivy_venv_stable:
   * Run this script to create a Kivy virtualenv for each of your projects.
   * This script installs the current stable version of Kivy from PyPI.
-  * For Python 2.7, it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, Docutils, 
-  and Buildozer installed.
+  * For Python 2.7, it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, and Docutils 
+  installed.
   * For Python 3.3 it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, and Docutils 
   installed.
 
-Notes on kivy_venv_dev:
-  * Run this script to create a Kivy virtualenv for each of your projects.
-  * This script installs the current development (master) version of Kivy from GitHub.
-  * For Python 2.7, it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, Docutils, 
-  and Buildozer installed.
-  * For Python 3.3 it creates a virtualenv with --system-site-packages enabled, and Kivy, Plyer, Pygments, and Docutils 
-  installed.
-
-To Install Buildozer Only:
+To Install Buildozer:
 
   1. Find the right subfolder for your distro and Python version.
-  2. Run the buildozer_only.sh script time.
-
+  2. Run the buildozer_only.sh script.
