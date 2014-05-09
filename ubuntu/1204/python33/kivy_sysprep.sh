@@ -5,7 +5,7 @@ sudo add-apt-repository ppa:fkrull/deadsnakes
 sudo apt-get update
 
 # Install necessary system packages
-sudo apt-get install -y build-essential mercurial git python3.3 python3.3-dev ffmpeg libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev unzip
+sudo apt-get install -y build-essential mercurial git python3.3 python3.3-dev ffmpeg libfreetype6-dev libjpeg-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsmpeg-dev libsdl1.2-dev libportmidi-dev libswscale-dev libavformat-dev libavcodec-dev zlib1g-dev unzip
 
 # Bootstrap a current Python environment
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python3.3
