@@ -7,7 +7,6 @@ sudo apt-get install -y build-essential mercurial git python3.4 python3.4-dev li
 wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python3.4
 rm setuptools*.zip
 sudo easy_install-3.4 -U pip
-sudo pip3.4 install -U virtualenv
 
 # Install current version of Cython
 sudo apt-get remove --purge -y cython
