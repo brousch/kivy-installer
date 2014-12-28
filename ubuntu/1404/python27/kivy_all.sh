@@ -10,7 +10,7 @@ sudo easy_install-2.7 -U pip
 
 # Install current version of Cython
 sudo apt-get remove --purge -y cython
-sudo pip2.7 install -U cython
+sudo pip2.7 install cython==0.20.1
 
 # Install other PyGame dependencies
 sudo apt-get remove --purge -y python-numpy
