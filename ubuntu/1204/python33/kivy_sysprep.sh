@@ -15,7 +15,7 @@ sudo pip3.3 install -U virtualenv
 
 # Install current version of Cython
 sudo apt-get remove --purge -y cython
-sudo pip3.3 install -U cython
+sudo pip3.3 install cython==0.20.1
 
 # Install other PyGame dependencies
 sudo apt-get remove --purge -y python-numpy
